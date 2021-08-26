@@ -1,0 +1,14 @@
+{
+  "name": "art-portfolio-website",
+  "version": "1.0.0",
+  "description": "Graphics and animation portfolio website.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss styles/styles.css -w"
+  },
+  "author": "Robert Parker",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  }
+}
