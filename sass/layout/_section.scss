@@ -1,0 +1,22 @@
+section {
+	height: 80vh;
+	padding: 1.5rem;
+
+	& li {
+		display: inline;
+
+		&:first-of-type {
+			margin-right: 1rem;
+		}
+	}
+}
+
+.img-fluid {
+	display: block;
+	margin: 1.8rem auto;
+	max-width: 80%;
+}
+
+.contact-container {
+	text-align: center; 
+}

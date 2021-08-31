@@ -1,0 +1,16 @@
+.navbar {
+	&.bg-dark {
+		--bs-bg-opacity: .5;
+		background-color: $color-dark-gray;
+	}
+
+	&-brand img {
+		margin-right: 1rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.navbar__display-toggle {
+		display: none;
+	}
+}
