@@ -1,6 +1,8 @@
 .navbar {
+	height: 10vh;
+	
 	&.bg-dark {
-		--bs-bg-opacity: .5;
+		--bs-bg-opacity: 0;
 		background-color: $color-dark-gray;
 	}
 

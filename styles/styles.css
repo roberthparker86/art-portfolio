@@ -32,11 +32,18 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #0B0F14;
+  background-color: black;
   box-sizing: border-box; }
 
 li {
   list-style-type: none; }
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: 0.2rem solid #d6d8d8;
+  margin: 2rem auto;
+  width: 65%; }
 
 a {
   color: #d6d8d8;
@@ -68,7 +75,10 @@ h2 {
 
 .contact-container {
   font-weight: bold;
-  letter-spacing: .1rem; }
+  font-size: 1.6rem; }
+
+.about__text {
+  width: 50%; }
 
 .row {
   margin-left: auto;
@@ -83,26 +93,27 @@ h2 {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 0.5rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 6rem) / 2); }
+    width: calc((100% - 0.5rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - ( 2 * 6rem)) / 3); }
+    width: calc((100% - ( 2 * 0.5rem)) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - ( 2 * 6rem)) / 3) + 6rem); }
+    width: calc(2 * ((100% - ( 2 * 0.5rem)) / 3) + 0.5rem); }
   .row .col-1-of-4 {
-    width: calc((100% - ( 3 * 6rem)) / 4); }
+    width: calc((100% - ( 3 * 0.5rem)) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - ( 3 * 6rem)) / 4) + 6rem); }
+    width: calc(2 * ((100% - ( 3 * 0.5rem)) / 4) + 0.5rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100% - ( 3 * 6rem)) / 4) + (2 * 6rem)); }
+    width: calc(3 * ((100% - ( 3 * 0.5rem)) / 4) + (2 * 0.5rem)); }
 
-.navbar.bg-dark {
-  --bs-bg-opacity: .5;
-  background-color: #2F2F33; }
-
-.navbar-brand img {
-  margin-right: 1rem; }
+.navbar {
+  height: 10vh; }
+  .navbar.bg-dark {
+    --bs-bg-opacity: 0;
+    background-color: #2F2F33; }
+  .navbar-brand img {
+    margin-right: 1rem; }
 
 @media (min-width: 768px) {
   .navbar__display-toggle {
@@ -110,16 +121,4 @@ h2 {
 
 section {
   height: 80vh;
-  padding: 1.5rem; }
-  section li {
-    display: inline; }
-    section li:first-of-type {
-      margin-right: 1rem; }
-
-.img-fluid {
-  display: block;
-  margin: 1.8rem auto;
-  max-width: 80%; }
-
-.contact-container {
-  text-align: center; }
+  padding: .5rem; }

@@ -15,10 +15,18 @@ html {
 }
 
 body {
-	background-color: $color-black;
+	background-color: black;
   box-sizing: border-box;
 }
 
 li {
 	list-style-type: none;
+}
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: .2rem solid $color-white;
+  margin: 2rem auto;
+  width: 65%;
 }
