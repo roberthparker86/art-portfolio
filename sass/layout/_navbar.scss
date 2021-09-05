@@ -1,13 +1,17 @@
 .navbar {
-	height: 10vh;
-	
+
 	&.bg-dark {
-		--bs-bg-opacity: 0;
-		background-color: $color-dark-gray;
+		--bs-bg-opacity: 1;
+		background-color: black !important;
 	}
 
 	&-brand img {
-		margin-right: 1rem;
+		margin-right: $mobile-size-sm;
+	}
+
+	&-collapse {
+		--bs-bg-opacity: .75 !important;
+		background-color: black;
 	}
 }
 

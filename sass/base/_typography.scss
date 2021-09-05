@@ -9,33 +9,44 @@ a {
 body {
 	color: $color-white;
 	font-family: $font-body;
-	font-size: 1.2rem;
+	font-size: $mobile-size-sm;
 }
 
 h1,
 h2 {
-	color: $color-primary-blue;
 	font-family: $font-header;
+	font-weight: 600;
 }
 
 h1 {
-	font-size: 2.4rem;
+	color: $color-primary-blue;
+	font-size: $mobile-size-xlg;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: $mobile-size-lg;
+}
+
+h3 {
+	font-size: $mobile-size-md;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: $mobile-size-sm;
+	font-weight: 600;
 }
 
 .navbar {
 	font-family: $font-header;
 
 	&__brand-title {
-		color: $color-light-gray;
-		font-size: 1.6rem;
+		color: $color-white;
+		font-size: $mobile-size-md;
 	}
 }
 
-.contact-container {
-	font-weight: bold;
-	font-size: 1.6rem;
+.section-end__link {
+	color: $color-primary-blue;
+	margin-bottom: $mobile-size-xlg;
 }

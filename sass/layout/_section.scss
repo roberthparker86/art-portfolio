@@ -1,4 +1,8 @@
 section {
-	height: 80vh;
+	height: 100vh;
 	padding: .5rem;
+
+	&:first-of-type {
+		height: 88vh;
+	}
 }

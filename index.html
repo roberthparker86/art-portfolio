@@ -9,7 +9,7 @@
   <!-- Google Font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -17,6 +17,7 @@
   <!-- Custom Styles -->
   <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
 	<!-- Navbar for mobile -->
 	<div class="navbar__display-toggle">
@@ -32,19 +33,16 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About Me</a>
+							<a class="nav-link" href="graphics.html">Graphics</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Graphics</a>
+							<a class="nav-link" href="animations.html">Animation</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Animation</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact me</a>
+							<a class="nav-link" href="contact.html">Contact me</a>
 						</li>
 					</ul>
 				</div>
@@ -53,30 +51,70 @@
 	</div>
 		
 	
-	<div class="container">
+	<div class="container position-relative">
+
+		<!-- Floating contact button-->
+		<div class="contact-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-pencil-fill contact-btn__img" viewBox="0 0 16 16">
+				<path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"/>
+			</svg>
+			<h4 class="contact-btn__text">Contact</h4>
+		</div>
+
 		<!-- About section -->
 		<section id="about">
 			<div class="row">
 
 				<div class="about__text col-1-of-2">
-					<h1>Animations & Graphics...</h1>
-					<p>It's what I'm about. A lifelong artist, I have over 8 years of experience creating a wide range of visual medium for marketing teams. From 3d renders, technical illustrations, and posters, to full blown animations, I can be a one stop shop for your graphics needs. Contact me today, so we can start a conversation on how I can help you!</p>
+					<h2>Animations and Graphics are what I'm about.</h2>
+					<p>
+						A lifelong artist, I have over 8 years of experience creating graphics for marketing teams. 
+						From 3d renders and technical illustrations, to full blown animations, I am a one stop shop for your graphics needs.
+					</p>
+					<a href="#graphics">
+						<h3 class="section-end__link">Graphics >>></h3>
+					</a>
+					<a href="#animation">
+						<h3 class="section-end__link">Animations >>></h3>
+					</a>
 				</div>
 	
-				<div class="col-1-of-2">
-					<img src="img/static-img/Illustrated-Me_2021_v1.png" class="img-fluid" >
+				<div class="about__img-container col-1-of-2">
+					<img src="img/static-img/Illustrated-Me_2021_v2.png" class="about__img img-fluid" >
 				</div>
 				
 			</div>
 
 		</section>
 
+		<!-- Graphics section -->
 		<section id="graphics">
-
+			<h1>Graphics of all shapes and sizes.</h1>
+			<p>
+				Need a 3d rendering for your website? I can help. Technical illustrations for product catalogs? I've got you covered. 
+				Whatever your graphics needs, I have your solution.
+			</p>
+			<a href="graphics.html">
+				<h3 class="section-end__link">See more >>></h3>
+			</a>
+			<a href="graphics.html">
+				<img src="/img/static-img/WW_Web.jpg" alt="WaterWolf Image" class="img-fluid">
+			</a>			
 		</section>
 
+		<!-- Animation Section -->
 		<section id="animation">
-
+			<h1>Animations to bring your products to life.</h1>
+			<p>
+				Attention grabbing first sentence. Another sentence summing
+				up animation experience. A call to action sentence.
+			</p>
+			<a href="animations.html">
+				<h3 class="section-end__link">See more >>></h3>
+			</a>
+			<a href="animations.html">
+				<img src="/img/static-img/WaterWolf-Thumbnail.png" alt="WaterWolf Image" class="img-fluid">
+			</a>	
 		</section>
 
 	</div>
@@ -86,7 +124,7 @@
 
   <!-- jQuery, and JS -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  
+
 	<!-- Custom JS -->
 	<script src="js/main.js"></script>
 </body>

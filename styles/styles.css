@@ -54,31 +54,72 @@ a {
 body {
   color: #d6d8d8;
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem; }
+  font-size: 1.4rem; }
 
 h1,
 h2 {
-  color: #4DB3E6;
-  font-family: "Work Sans", sans-serif; }
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600; }
 
 h1 {
-  font-size: 2.4rem; }
+  color: #4DB3E6;
+  font-size: 2.6rem; }
 
 h2 {
-  font-size: 2rem; }
+  font-size: 2.2rem; }
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: 600; }
+
+h4 {
+  font-size: 1.4rem;
+  font-weight: 600; }
 
 .navbar {
   font-family: "Work Sans", sans-serif; }
   .navbar__brand-title {
-    color: #A5A4A5;
-    font-size: 1.6rem; }
+    color: #d6d8d8;
+    font-size: 1.8rem; }
 
-.contact-container {
-  font-weight: bold;
-  font-size: 1.6rem; }
+.section-end__link {
+  color: #4DB3E6;
+  margin-bottom: 2.6rem; }
+
+.postion-relative {
+  position: relative; }
+
+.contact-btn {
+  background-color: #d6d8d8;
+  border-radius: 5rem;
+  color: black;
+  height: 7rem;
+  padding-top: 1rem;
+  position: fixed;
+  top: 85vh;
+  text-align: center;
+  left: 75vw;
+  width: 7rem; }
+  .contact-btn__img {
+    margin-bottom: .5rem; }
+
+#about .row {
+  margin-top: 3rem; }
 
 .about__text {
   width: 50%; }
+
+.about__img-container {
+  position: relative; }
+
+.about__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 .row {
   margin-left: auto;
@@ -107,18 +148,23 @@ h2 {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - ( 3 * 0.5rem)) / 4) + (2 * 0.5rem)); }
 
-.navbar {
-  height: 10vh; }
-  .navbar.bg-dark {
-    --bs-bg-opacity: 0;
-    background-color: #2F2F33; }
-  .navbar-brand img {
-    margin-right: 1rem; }
+.navbar.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: black !important; }
+
+.navbar-brand img {
+  margin-right: 1.4rem; }
+
+.navbar-collapse {
+  --bs-bg-opacity: .75 !important;
+  background-color: black; }
 
 @media (min-width: 768px) {
   .navbar__display-toggle {
     display: none; } }
 
 section {
-  height: 80vh;
+  height: 100vh;
   padding: .5rem; }
+  section:first-of-type {
+    height: 88vh; }
