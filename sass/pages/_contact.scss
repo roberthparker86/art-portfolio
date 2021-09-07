@@ -1,0 +1,12 @@
+.contact {
+	&__container {
+		margin-top: 2rem;
+		width: 80%;
+	}
+
+	&__icon {
+		color: $color-primary-blue;
+		height: 6rem;
+		width: 6rem;
+	}
+}

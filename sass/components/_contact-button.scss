@@ -2,18 +2,19 @@
 	background-color: $color-white;
 	border-radius: 5rem;
 	color: black;
-	height: 7rem;
-	padding-top: 1rem;
+	height: 8rem;
+	padding-top: 1.5rem;
 	position: fixed;
 	top: 85vh;
 	text-align: center;
 	left: 75vw;
-	width: 7rem;
+	width: 8rem;
 
 	&__img {
 		margin-bottom: .5rem;
 	}
+
+	&:hover {
+		background-color: $color-primary-blue;
+	}
 }
-
-
-		

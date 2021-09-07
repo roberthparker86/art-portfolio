@@ -30,3 +30,10 @@ hr {
   margin: 2rem auto;
   width: 65%;
 }
+
+.btn-primary {
+	background-color: $color-primary-blue;
+	border-color: $color-primary-blue;
+	font-size: $mobile-size-md;
+	font-weight: 600;
+}

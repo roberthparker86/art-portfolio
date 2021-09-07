@@ -6,15 +6,12 @@
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/buttons";
 @import "components/contact-button";
-@import "components/service-card";
+@import "components/navbar";
 
-@import "layout/about";
 @import "layout/grid";
-@import "layout/header";
-@import "layout/navbar";
 @import "layout/section";
 
+@import "pages/contact";
 @import "pages/home";
 

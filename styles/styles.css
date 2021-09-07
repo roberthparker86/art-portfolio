@@ -45,6 +45,12 @@ hr {
   margin: 2rem auto;
   width: 65%; }
 
+.btn-primary {
+  background-color: #4DB3E6;
+  border-color: #4DB3E6;
+  font-size: 1.8rem;
+  font-weight: 600; }
+
 a {
   color: #d6d8d8;
   text-decoration: none; }
@@ -93,33 +99,32 @@ h4 {
   background-color: #d6d8d8;
   border-radius: 5rem;
   color: black;
-  height: 7rem;
-  padding-top: 1rem;
+  height: 8rem;
+  padding-top: 1.5rem;
   position: fixed;
   top: 85vh;
   text-align: center;
   left: 75vw;
-  width: 7rem; }
+  width: 8rem; }
   .contact-btn__img {
     margin-bottom: .5rem; }
+  .contact-btn:hover {
+    background-color: #4DB3E6; }
 
-#about .row {
-  margin-top: 3rem; }
+.navbar.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: black !important; }
 
-.about__text {
-  width: 50%; }
+.navbar-brand img {
+  margin-right: 1.4rem; }
 
-.about__img-container {
-  position: relative; }
+.navbar-collapse {
+  --bs-bg-opacity: .75 !important;
+  background-color: black; }
 
-.about__img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%); }
+@media (min-width: 768px) {
+  .navbar__display-toggle {
+    display: none; } }
 
 .row {
   margin-left: auto;
@@ -148,23 +153,35 @@ h4 {
   .row .col-3-of-4 {
     width: calc(3 * ((100% - ( 3 * 0.5rem)) / 4) + (2 * 0.5rem)); }
 
-.navbar.bg-dark {
-  --bs-bg-opacity: 1;
-  background-color: black !important; }
-
-.navbar-brand img {
-  margin-right: 1.4rem; }
-
-.navbar-collapse {
-  --bs-bg-opacity: .75 !important;
-  background-color: black; }
-
-@media (min-width: 768px) {
-  .navbar__display-toggle {
-    display: none; } }
-
 section {
   height: 100vh;
   padding: .5rem; }
   section:first-of-type {
     height: 88vh; }
+
+.contact__container {
+  margin-top: 2rem;
+  width: 80%; }
+
+.contact__icon {
+  color: #4DB3E6;
+  height: 6rem;
+  width: 6rem; }
+
+#about .row {
+  margin-top: 3rem; }
+
+.about__text {
+  width: 50%; }
+
+.about__img-container {
+  position: relative; }
+
+.about__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); }
