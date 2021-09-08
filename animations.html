@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Art of Robert</title>
+  <title>Robert Parker - Animations</title>
 
-  <!-- Google Font -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Work+Sans:wght@200;300;400&display=swap" rel="stylesheet">
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 	<!-- Bootstrap -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
@@ -18,13 +18,14 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+
 	<!-- Navbar for mobile -->
 	<div class="navbar__display-toggle">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
 					<img src="/img/artist-logos/RP_Logo-2020-72dpi_Light_Color.png" alt="" width="60" height="60" class="d-inline-block">
-					<span class="navbar__brand-title">Robert Parker</span>
+					<span class="navbar__brand-title">Robert <span class="text--blue">Parker</span></span>
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -32,72 +33,83 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">Home</a>
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About Me</a>
+							<a class="nav-link" href="graphics.html">Graphics</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Graphics</a>
+							<a class="nav-link" href="animations.html">Animation</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Animation</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">Contact me</a>
+							<a class="nav-link" href="contact.html">Contact me</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</div>
-		
-	
+
+	<!-- Animations section -->
 	<div class="container">
+		<section>
+		
+			<h2 class="mb-5">
+				Communicate directly to your customers with animation.
+			</h2>
+			<div class="row">
 
-		<!-- Animations section -->
-		<section id="animations">
-			<h2>Animations</h2>
-			<p>It's what I'm about. Whats my experience? What can I offer that's different? Call to action.</p>
-			<!-- https://youtu.be/ZiNyi4ZyUQg Sentry Closure-->
-
-			<!-- https://youtu.be/9IgO2Hz3RQ0 WaterWolf -->
-
-			<!-- Start Carousel -->
-			<div id="carouselAnimation" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
-				<div class="carousel-inner">
-					<div class="carousel-item active" data-bs-interval="7000"> 	
-						<img src="img/artist-logos/RP_Logo-2020-72dpi_Black_Cutout.png" class="d-block w-100 img-fluid" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>First slide label</h5>
-							<p>Some representative placeholder content for the first slide.</p>
-						</div>
-					</div>
-					<div class="carousel-item" data-bs-interval="2000">
-						<img src="img/artist-logos/RP_Logo-2020-72dpi_Light_Color.png" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Second slide label</h5>
-							<p>Some representative placeholder content for the second slide.</p>
-						</div>
-					</div>
-					<div class="carousel-item">
-						<img src="img/artist-logos/RP_Logo-2020-72dpi_WhiteCutout.png" class="d-block w-100" alt="...">
-						<div class="carousel-caption d-none d-md-block">
-							<h5>Third slide label</h5>
-							<p>Some representative placeholder content for the third slide.</p>
+				<div class="col-md-4">
+					<!-- WaterWolf Card -->
+					<div class="card bg-dark mb-5">
+						<img src="/img/thumbnails/WaterWolf-Thumbnail.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">WaterWolf</h5>
+							<p class="card-text">Product animation for National Oilwell Varco.</p>
+							<a href="https://youtu.be/9IgO2Hz3RQ0" class="btn btn-primary">View it here</a>
 						</div>
 					</div>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
+
+				<div class="col-md-4">
+					<!-- FlowSafe SS Valve Card -->
+					<div class="card bg-dark mb-5">
+						<img src="/img/thumbnails/FlowSafeValve-Thumbnail.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">FlowSafe Subsurface Safety Valve</h5>
+							<p class="card-text">Product animation for Superior Energy Completion Services.</p>
+							<a href="https://superiorenergy.com/brands/superior-energy-completion-services/subsurface-safety-valves/" class="btn btn-primary">View it here</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- Sentry Closure Card -->
+					<div class="card bg-dark mb-5">
+						<img src="/img/thumbnails/SetnryClosure-Thumbnail.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Sentry Closure</h5>
+							<p class="card-text">Product animation for National Oilwell Varco.</p>
+							<a href="https://youtu.be/ZiNyi4ZyUQg" class="btn btn-primary">View it here</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<!-- Production Service Hookup Card -->
+					<div class="card bg-dark mb-5">
+						<img src="/img/thumbnails/PSHookup-Thumbnail.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Production Service Hookup</h5>
+							<p class="card-text">Product animation for National Oilwell Varco.</p>
+							<a href="https://youtu.be/sYsPlVWGVzs" class="btn btn-primary">View it here</a>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			<!-- End Carousel-->
+
+			
 
 		</section>
 	</div>

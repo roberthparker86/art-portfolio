@@ -2,17 +2,14 @@
 	margin-top: 3rem;
 }
 
-.about__text {
-    width: 50%;
-}
-
 .about__img-container {
 	position: relative;
+	height: 40vh;
 }
 
 .about__img {
 	display: block;
   margin: 0 auto;
-	max-width: 100%;
+	max-width: 18rem;
 	@include center-in-container;
 }

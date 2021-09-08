@@ -41,12 +41,17 @@ h4 {
 	font-family: $font-header;
 
 	&__brand-title {
-		color: $color-white;
+		color: $color-primary-blue;
 		font-size: $mobile-size-md;
+		font-weight: 600;
 	}
 }
 
 .section-end__link {
 	color: $color-primary-blue;
 	margin-bottom: $mobile-size-xlg;
+
+	&--last {
+		margin-bottom: 0;
+	}
 }

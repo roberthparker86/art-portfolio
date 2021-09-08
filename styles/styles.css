@@ -45,6 +45,9 @@ hr {
   margin: 2rem auto;
   width: 65%; }
 
+img {
+  max-height: 70vh; }
+
 .btn-primary {
   background-color: #4DB3E6;
   border-color: #4DB3E6;
@@ -85,15 +88,21 @@ h4 {
 .navbar {
   font-family: "Work Sans", sans-serif; }
   .navbar__brand-title {
-    color: #d6d8d8;
-    font-size: 1.8rem; }
+    color: #4DB3E6;
+    font-size: 1.8rem;
+    font-weight: 600; }
 
 .section-end__link {
   color: #4DB3E6;
   margin-bottom: 2.6rem; }
+  .section-end__link--last {
+    margin-bottom: 0; }
 
 .postion-relative {
   position: relative; }
+
+.text--blue {
+  color: #4DB3E6; }
 
 .contact-btn {
   background-color: #d6d8d8;
@@ -126,33 +135,6 @@ h4 {
   .navbar__display-toggle {
     display: none; } }
 
-.row {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 114rem; }
-  .row:not(:last-child) {
-    margin-bottom: 8rem; }
-  .row::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .row [class^="col-"] {
-    float: left; }
-    .row [class^="col-"]:not(:last-child) {
-      margin-right: 0.5rem; }
-  .row .col-1-of-2 {
-    width: calc((100% - 0.5rem) / 2); }
-  .row .col-1-of-3 {
-    width: calc((100% - ( 2 * 0.5rem)) / 3); }
-  .row .col-2-of-3 {
-    width: calc(2 * ((100% - ( 2 * 0.5rem)) / 3) + 0.5rem); }
-  .row .col-1-of-4 {
-    width: calc((100% - ( 3 * 0.5rem)) / 4); }
-  .row .col-2-of-4 {
-    width: calc(2 * ((100% - ( 3 * 0.5rem)) / 4) + 0.5rem); }
-  .row .col-3-of-4 {
-    width: calc(3 * ((100% - ( 3 * 0.5rem)) / 4) + (2 * 0.5rem)); }
-
 section {
   height: 100vh;
   padding: .5rem; }
@@ -174,16 +156,14 @@ section {
 #about .row {
   margin-top: 3rem; }
 
-.about__text {
-  width: 50%; }
-
 .about__img-container {
-  position: relative; }
+  position: relative;
+  height: 40vh; }
 
 .about__img {
   display: block;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 18rem;
   left: 50%;
   position: absolute;
   top: 50%;
