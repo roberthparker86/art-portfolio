@@ -114,7 +114,8 @@ h4 {
   top: 85vh;
   text-align: center;
   left: 75vw;
-  width: 8rem; }
+  width: 8rem;
+  z-index: 3; }
   .contact-btn__img {
     margin-bottom: .5rem; }
   .contact-btn:hover {
@@ -132,7 +133,7 @@ h4 {
   background-color: black; }
 
 @media (min-width: 768px) {
-  .navbar__display-toggle {
+  .navbar__display-toggle--mobile {
     display: none; } }
 
 section {
@@ -150,8 +151,13 @@ section {
 
 .contact__icon {
   color: #4DB3E6;
-  height: 6rem;
-  width: 6rem; }
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  max-width: 8rem; }
+
+.contact__link {
+  color: black; }
 
 #about .row {
   margin-top: 3rem; }
