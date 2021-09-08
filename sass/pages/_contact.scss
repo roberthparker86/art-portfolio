@@ -1,7 +1,8 @@
 .contact {
 	&__container {
-		margin-top: 2rem;
 		width: 80%;
+
+		@include center-in-container;
 	}
 
 	&__icon {

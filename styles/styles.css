@@ -160,8 +160,11 @@ section {
     height: 88vh; }
 
 .contact__container {
-  margin-top: 2rem;
-  width: 80%; }
+  width: 80%;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%); }
 
 .contact__icon {
   color: #4DB3E6;
