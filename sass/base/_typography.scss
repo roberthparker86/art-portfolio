@@ -29,7 +29,7 @@ h2 {
 
 h3 {
 	font-size: $mobile-size-md;
-	font-weight: 600;
+	font-weight: 400;
 }
 
 h4 {
@@ -39,6 +39,14 @@ h4 {
 
 .navbar {
 	font-family: $font-header;
+
+	&-dark &-nav .nav-link {
+		color: rgba($color-white, .55);
+
+		&.active {
+			color: $color-white;
+		}
+	}
 
 	&__brand-title {
 		color: $color-primary-blue;
@@ -53,5 +61,38 @@ h4 {
 
 	&--last {
 		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	body {
+		font-size: $desktop-size-sm;
+	}
+
+	h1 {
+		font-size: $desktop-size-xlg;
+	}
+
+	h2 {
+		font-size: $desktop-size-lg;
+	}
+
+	h3 {
+		font-size: $desktop-size-md;
+	}
+
+	h4 {
+		font-size: $desktop-size-sm;
+	}
+
+	.navbar {
+
+		&__brand-title {
+			font-size: $desktop-size-md;
+		}
+	}
+
+	.section-end__link {
+		margin-bottom: $desktop-size-xlg;
 	}
 }

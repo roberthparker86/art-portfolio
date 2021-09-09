@@ -1,5 +1,6 @@
-#about .row {
-	margin-top: 3rem;
+#about {
+	display: flex;
+	align-items: center;
 }
 
 .about__img-container {
@@ -12,4 +13,10 @@
   margin: 0 auto;
 	max-width: 18rem;
 	@include center-in-container;
+}
+
+@media (min-width: 768px) {
+	.about__img {
+		max-width: 40rem;
+	}
 }

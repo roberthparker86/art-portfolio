@@ -23,14 +23,6 @@ li {
 	list-style-type: none;
 }
 
-hr {
-  background: none;
-  border: none;
-  border-bottom: .2rem solid $color-white;
-  margin: 2rem auto;
-  width: 65%;
-}
-
 img {
 	max-height: 70vh;
 }
@@ -40,4 +32,14 @@ img {
 	border-color: $color-primary-blue;
 	font-size: $mobile-size-md;
 	font-weight: 600;
+}
+
+.row {
+	align-items: center;
+}
+
+@media (min-width: 768px) {
+	.btn-primary {
+		font-size: $desktop-size-md;
+	}
 }

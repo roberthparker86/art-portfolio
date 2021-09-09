@@ -1,0 +1,27 @@
+.carousel {
+
+	&-item {
+		margin-right: 0;
+		text-align: center;
+		width: auto;
+
+		& img {
+			max-width: 100%;
+		}
+
+		& a {
+			color: $color-dark-gray;
+		}
+	}
+
+	&-inner {
+		display: flex !important;
+	justify-content: center;
+	}
+
+	&-control-icon-bg {
+		background-color: white;
+		border-radius: 3rem;
+		padding: .7rem 1rem;
+	}
+}

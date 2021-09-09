@@ -1,12 +1,19 @@
 .navbar {
 
+	&-expand-md,
+	&-collapse {
+		justify-content: flex-end;
+	}
+
 	&.bg-dark {
 		--bs-bg-opacity: 1;
 		background-color: black !important;
 	}
-
-	&-brand img {
+	
+	&-brand__icon {
+		height: auto;
 		margin-right: $mobile-size-sm;
+		width: 6rem;
 	}
 
 	&-collapse {
@@ -16,7 +23,17 @@
 }
 
 @media (min-width: 768px) {
-	.navbar__display-toggle--mobile {
-		display: none;
+	.navbar {
+
+		&-brand__icon {
+			height: auto;
+			margin-right: $desktop-size-sm;
+			width: 8.5rem;
+		}
+
+		&-expand-md	&-nav .nav-link {
+			padding-right: 1rem;
+			padding-left: 1rem;
+		}
 	}
 }
