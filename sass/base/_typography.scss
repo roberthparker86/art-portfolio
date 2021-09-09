@@ -38,6 +38,11 @@ h4 {
 	font-weight: 600;
 }
 
+h5 {
+	font-size: $mobile-size-sm;
+	font-weight: 600;
+}
+
 .navbar {
 	font-family: $font-header;
 
@@ -87,6 +92,11 @@ h4 {
 
 	h4 {
 		font-size: $desktop-size-sm;
+	}
+
+	h5 {
+		font-size: $desktop-size-sm;
+		font-weight: 600;
 	}
 
 	.navbar {

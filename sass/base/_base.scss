@@ -36,10 +36,14 @@ img {
 
 .row {
 	align-items: center;
+
+	&--animations {
+		align-items: flex-start;
+	}
 }
 
 @media (min-width: 768px) {
 	.btn-primary {
-		font-size: $desktop-size-md;
+		font-size: $desktop-size-sm;
 	}
 }
