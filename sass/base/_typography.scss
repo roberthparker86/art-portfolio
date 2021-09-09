@@ -1,6 +1,7 @@
 a {
 	color: $color-white;
 	text-decoration: none;
+	
 	&:hover {
 		color: $color-primary-red;
 	}
@@ -56,7 +57,10 @@ h4 {
 }
 
 .section-end__link {
+	display: block;
 	color: $color-primary-blue;
+	font-size: $mobile-size-md;
+	font-weight: 400;
 	margin-bottom: $mobile-size-xlg;
 
 	&--last {
@@ -93,6 +97,7 @@ h4 {
 	}
 
 	.section-end__link {
+		font-size: $desktop-size-md;
 		margin-bottom: $desktop-size-xlg;
 	}
 }

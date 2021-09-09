@@ -97,7 +97,10 @@ h4 {
     font-weight: 600; }
 
 .section-end__link {
+  display: block;
   color: #4DB3E6;
+  font-size: 1.8rem;
+  font-weight: 400;
   margin-bottom: 2.6rem; }
   .section-end__link--last {
     margin-bottom: 0; }
@@ -116,6 +119,7 @@ h4 {
   .navbar__brand-title {
     font-size: 2.4rem; }
   .section-end__link {
+    font-size: 2.4rem;
     margin-bottom: 4rem; } }
 
 .postion-relative {
@@ -135,15 +139,26 @@ h4 {
     max-width: 100%; }
   .carousel-item a {
     color: #2F2F33; }
+  .carousel-item a:hover {
+    color: #CB1F3F; }
 
 .carousel-inner {
   display: flex !important;
-  justify-content: center; }
+  justify-content: center;
+  overflow: visible; }
 
 .carousel-control-icon-bg {
   background-color: white;
   border-radius: 3rem;
   padding: .7rem 1rem; }
+
+.carousel-caption {
+  background-color: white;
+  border-radius: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  bottom: -5%;
+  transform: translateY(100%); }
 
 .contact-btn {
   background-color: #d6d8d8;
@@ -160,7 +175,7 @@ h4 {
   .contact-btn__img {
     margin-bottom: .5rem; }
   .contact-btn:hover {
-    background-color: #4DB3E6; }
+    background-color: #CB1F3F; }
 
 .navbar-expand-md, .navbar-collapse {
   justify-content: flex-end; }
@@ -228,5 +243,9 @@ section {
   transform: translate(-50%, -50%); }
 
 @media (min-width: 768px) {
+  .about__img {
+    max-width: 35rem; } }
+
+@media (min-width: 1100px) {
   .about__img {
     max-width: 40rem; } }

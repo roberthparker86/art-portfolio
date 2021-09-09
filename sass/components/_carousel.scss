@@ -12,16 +12,30 @@
 		& a {
 			color: $color-dark-gray;
 		}
+		
+		& a:hover {
+			color: $color-primary-red;
+		}
 	}
 
 	&-inner {
 		display: flex !important;
-	justify-content: center;
+		justify-content: center;
+		overflow: visible;
 	}
 
 	&-control-icon-bg {
 		background-color: white;
 		border-radius: 3rem;
 		padding: .7rem 1rem;
+	}
+
+	&-caption {
+		background-color: white;
+		border-radius: 1rem;
+		padding: .5rem 1rem;
+		position: absolute;
+		bottom: -5%;
+		transform: translateY(100%);
 	}
 }
